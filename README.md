@@ -6,11 +6,14 @@ step1:
       
 step2:
       from the website https://www.kaggle.com/c/dogs-vs-cats/data download the file train and test1 to the file "./data"
+      In the command line:
+      cd Kaggle-Dogs_vs_Cats_PyTorch
+      python dog_rename.py (to rename the dog.jpg)
 
 step3:
       In the command line:
-      cd Kaggle-Dogs_vs_Cats_PyTorch
-      python train.py
-      python test.py
+      python train.py #train
+      python test.py  #test and generate the submission csv file
       
-      ps.有个问题，狗的图片需要重新命名
+In addition,the processing of the train data can be separated to two files to hold the cat and dog picture respectively,
+thus we can use the ImageFolder in the PyTorch.
