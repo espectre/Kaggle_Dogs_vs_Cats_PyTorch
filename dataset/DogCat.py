@@ -19,13 +19,16 @@ class DogCat(data.Dataset):
 			imgs=sorted(imgs,key=lambda x: int(x.split('.')[-2]))
 
 		imgs_num=len(imgs)
-
+		
 		if self.test:
 			self.imgs=imgs
-		elif train:
-			self.imgs=imgs[:int(0.7*imgs_num)]
 		else:
-			self.imgs=imgs[int(0.7*imgs_num):]
+			random.shuffle(imgs)
+			if self.train:
+				self.imgs=imgs[:int(0.7*imgs_num)]
+			else:
+				self.imgs=imgs[int(0.7*imgs_num):]
+				
 	def __getitem__(self,index):
 		img_path=self.imgs[index]
 		if self.test:
