@@ -8,6 +8,7 @@ import torchvision.transforms as transforms
 class DogCat(data.Dataset):
 	def __init__(self,root,transform=None,train=True,test=False):
 		self.test=test
+		self.train=train
 		self.transform=transform
 		imgs=[os.path.join(root,img)for img in os.listdir(root)]
 
