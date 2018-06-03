@@ -12,3 +12,5 @@ step3:
       cd Kaggle-Dogs_vs_Cats_PyTorch
       python train.py
       python test.py
+      
+      ps.有个问题，狗的图片需要重新命名
