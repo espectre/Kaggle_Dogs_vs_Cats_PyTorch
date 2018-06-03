@@ -14,6 +14,7 @@ step2:
 
 step3:
 ------
+      In the 'model/' file and the 'dataset/' file ,add an "__init__.py" empty file respectively.
       In the command line:
       python train.py #train
       python test.py  #test and generate the submission csv file
