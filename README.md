@@ -6,7 +6,8 @@ step1:
       
 step2:
 -----
-      from the website https://www.kaggle.com/c/dogs-vs-cats/data download the file train and test1 to the file "./data"
+      from the website https://www.kaggle.com/c/dogs-vs-cats/data 
+      download the file train and test1 to the file "./data"
       In the command line:
       cd Kaggle-Dogs_vs_Cats_PyTorch
       python dog_rename.py (to rename the dog.jpg)
