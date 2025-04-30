@@ -18,7 +18,7 @@ step3:
       python train.py #train
       python test.py  #test and generate the submission csv file
       
-Addiction
+Addition
 ===
 In addition,the processing of the train data can be separated to two files to hold the cat and dog picture respectively,
 thus we can use the ImageFolder in the PyTorch.
